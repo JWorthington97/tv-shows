@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+.episode {
+    border: 10px solid orange;
+    display: flex;
+    width: 1200px
+
+}
+
+.episodeImage {
+    border: 10px solid green;
+    width: 800px
+}
+
+.episodeInfo {
+    border: 10px solid red;
+}
+
+.title {
+    border: 10px solid blue;
+    font-family: 'Josefin Sans', sans-serif;
+    color: black;
+    margin-top: 0;
+    height: 5%
+}
+
+.summary {
+    font-size: 2em;
+    border: 10px solid yellowgreen;    
+}
+
+.episodes {
+    margin: 0 auto;
+    /* width: 1200px; */
+    display: grid;
+    border: 10px solid blue;
+    grid-template-columns: repeat(auto-fit, minmax(1200px, 1fr));
+    grid-gap: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    flex-wrap: wrap;
+    justify-items: center;
+    /* font-family: 'Alata', sans-serif; */
+}
+
+
+/* https://stackoverflow.com/questions/37502266/how-do-i-create-a-3x3-grid-via-css/46260247 */

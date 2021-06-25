@@ -1,7 +1,10 @@
-import { greet } from "./utils/greet";
+import GetEpisodes from './episodes'
+import './App.css'
 
 function App(): JSX.Element {
-  return <h1>{greet("World")}</h1>;
+  return <>
+  <GetEpisodes />
+  </>
 }
 
 export default App;

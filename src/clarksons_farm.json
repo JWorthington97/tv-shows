@@ -1,0 +1,146 @@
+[
+  {
+    "id": 2097221,
+    "url": "https://www.tvmaze.com/episodes/2097221/clarksons-farm-1x01-tractoring",
+    "name": "Tractoring",
+    "season": 1,
+    "number": 1,
+    "type": "regular",
+    "airdate": "2021-06-11",
+    "airtime": "",
+    "airstamp": "2021-06-11T12:00:00+00:00",
+    "runtime": 54,
+    "image": {
+      "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819747.jpg",
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/327/819747.jpg"
+    },
+    "summary": "<p>Jeremy Clarkson embarks on his path towards muddy misery and potential ruin by running his own farm.</p>",
+    "_links": { "self": { "href": "https://api.tvmaze.com/episodes/2097221" } }
+  },
+  {
+    "id": 2110095,
+    "url": "https://www.tvmaze.com/episodes/2110095/clarksons-farm-1x02-sheeping",
+    "name": "Sheeping",
+    "season": 1,
+    "number": 2,
+    "type": "regular",
+    "airdate": "2021-06-11",
+    "airtime": "",
+    "airstamp": "2021-06-11T12:00:00+00:00",
+    "runtime": 50,
+    "image": {
+      "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819748.jpg",
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/327/819748.jpg"
+    },
+    "summary": "<p>Jeremy decides to get a flock of sheep, not realising the added complications these high-maintenance animals will bring.</p>",
+    "_links": { "self": { "href": "https://api.tvmaze.com/episodes/2110095" } }
+  },
+  {
+    "id": 2110096,
+    "url": "https://www.tvmaze.com/episodes/2110096/clarksons-farm-1x03-shopping",
+    "name": "Shopping",
+    "season": 1,
+    "number": 3,
+    "type": "regular",
+    "airdate": "2021-06-11",
+    "airtime": "",
+    "airstamp": "2021-06-11T12:00:00+00:00",
+    "runtime": 52,
+    "image": {
+      "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819749.jpg",
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/327/819749.jpg"
+    },
+    "summary": "<p>Jeremy Clarkson decides to open a farm shop to sell his own produce. This sounds like it should be easy. It isn't.</p>",
+    "_links": { "self": { "href": "https://api.tvmaze.com/episodes/2110096" } }
+  },
+  {
+    "id": 2110098,
+    "url": "https://www.tvmaze.com/episodes/2110098/clarksons-farm-1x04-wilding",
+    "name": "Wilding",
+    "season": 1,
+    "number": 4,
+    "type": "regular",
+    "airdate": "2021-06-11",
+    "airtime": "",
+    "airstamp": "2021-06-11T12:00:00+00:00",
+    "runtime": 48,
+    "image": {
+      "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819750.jpg",
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/327/819750.jpg"
+    },
+    "summary": "<p>Jeremy Clarkson decides to become a naturalist.</p>",
+    "_links": { "self": { "href": "https://api.tvmaze.com/episodes/2110098" } }
+  },
+  {
+    "id": 2110104,
+    "url": "https://www.tvmaze.com/episodes/2110104/clarksons-farm-1x05-pan-dem-icking",
+    "name": "Pan (dem) icking",
+    "season": 1,
+    "number": 5,
+    "type": "regular",
+    "airdate": "2021-06-11",
+    "airtime": "",
+    "airstamp": "2021-06-11T12:00:00+00:00",
+    "runtime": 46,
+    "image": {
+      "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819751.jpg",
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/327/819751.jpg"
+    },
+    "summary": "<p>As Covid-19 puts Britain on lockdown, Jeremy suddenly finds that his biggest worries aren't all related to the upcoming lambing season.</p>",
+    "_links": { "self": { "href": "https://api.tvmaze.com/episodes/2110104" } }
+  },
+  {
+    "id": 2110099,
+    "url": "https://www.tvmaze.com/episodes/2110099/clarksons-farm-1x06-melting",
+    "name": "Melting",
+    "season": 1,
+    "number": 6,
+    "type": "regular",
+    "airdate": "2021-06-11",
+    "airtime": "",
+    "airstamp": "2021-06-11T12:00:00+00:00",
+    "runtime": 41,
+    "image": {
+      "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819752.jpg",
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/327/819752.jpg"
+    },
+    "summary": "<p>Jeremy discovers why British farmers are always complaining about the weather. It's mostly because it never does what they want it to do.</p>",
+    "_links": { "self": { "href": "https://api.tvmaze.com/episodes/2110099" } }
+  },
+  {
+    "id": 2110105,
+    "url": "https://www.tvmaze.com/episodes/2110105/clarksons-farm-1x07-fluffing",
+    "name": "Fluffing",
+    "season": 1,
+    "number": 7,
+    "type": "regular",
+    "airdate": "2021-06-11",
+    "airtime": "",
+    "airstamp": "2021-06-11T12:00:00+00:00",
+    "runtime": 40,
+    "image": {
+      "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819753.jpg",
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/327/819753.jpg"
+    },
+    "summary": "<p>As the drought drags on and harvest time gets closer, Jeremy and his motley crew have a fearsome list of jobs to complete.</p>",
+    "_links": { "self": { "href": "https://api.tvmaze.com/episodes/2110105" } }
+  },
+  {
+    "id": 2110106,
+    "url": "https://www.tvmaze.com/episodes/2110106/clarksons-farm-1x08-harvesting",
+    "name": "Harvesting",
+    "season": 1,
+    "number": 8,
+    "type": "regular",
+    "airdate": "2021-06-11",
+    "airtime": "",
+    "airstamp": "2021-06-11T12:00:00+00:00",
+    "runtime": 54,
+    "image": {
+      "medium": "https://static.tvmaze.com/uploads/images/medium_landscape/327/819754.jpg",
+      "original": "https://static.tvmaze.com/uploads/images/original_untouched/327/819754.jpg"
+    },
+    "summary": "<p>After months of hard work Clarkson's farm arrives at a make or break moment; harvest time.</p>",
+    "_links": { "self": { "href": "https://api.tvmaze.com/episodes/2110106" } }
+  }
+]
