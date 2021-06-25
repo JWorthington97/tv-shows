@@ -24,11 +24,12 @@ function ShowEpisode(ep: IEpisode): JSX.Element {
     <div className="episode">
       <img className="episodeImage" src={ep.image.original} alt=""></img>
       <div className="episodeInfo">
-        <h1 className="title">
-          {ep.name} - S{0 * (2 - ep.season.toString().length)}
+        <h3 className="title">
+          {ep.name}</h3>
+          S{0 * (2 - ep.season.toString().length)}
           {ep.season}E{0 * (2 - ep.number.toString().length)}
           {ep.number}
-        </h1>
+        
         <p className="summary">
           {ep.summary.replace(/<p>/g, "").replace(/<\/p>/g, "")}
         </p>
