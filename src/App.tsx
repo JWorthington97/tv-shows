@@ -1,11 +1,11 @@
 import "./App.css";
-import GetEpisodes from "./episodes";
-import Footer from "./footer";
+import Footer from "./components/Footer";
+import Episodes from "./components/Episodes";
 
 function App(): JSX.Element {
   return (
     <>
-      <GetEpisodes />
+      <Episodes />
       <Footer />
     </>
   );
