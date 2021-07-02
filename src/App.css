@@ -14,7 +14,7 @@
 
 .episodeInfo {
   /* border: 3px solid red; */
-  padding: 20px
+  padding: 20px;
 }
 
 .title {
@@ -39,7 +39,6 @@
   display: grid;
   /* border: 3px solid blue; */
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  /* grid-template-columns: repeat(3, 1fr); */
   grid-gap: 1rem;
   font-family: "Josefin Sans", sans-serif;
   flex-wrap: wrap;
