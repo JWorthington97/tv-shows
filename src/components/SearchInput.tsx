@@ -2,7 +2,8 @@ import episodes from "../clarksons_farm.json";
 import SearchEpisodes from "../utils/searchEpisodes";
 import { SearchInputProps } from "../utils/Interfaces";
 
-function SearchInput({ search, setSearch }: SearchInputProps): JSX.Element {
+//just repsonsbiel fro maitning the count
+function SearchInput({ search, setSearch }: SearchInputProps, ): JSX.Element {
   const showEpisodes = SearchEpisodes(search);
 
   return (

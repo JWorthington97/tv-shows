@@ -1,7 +1,7 @@
 import episodes from "../clarksons_farm.json";
 import { IEpisode } from "../utils/Interfaces";
 
-function SearchEpisodes(search: string): IEpisode[] {
+function searchEpisodes(search: string): IEpisode[] {
   return episodes.filter(
     (episode) =>
       episode.summary.toLowerCase().includes(search.toLowerCase()) ||
@@ -9,4 +9,4 @@ function SearchEpisodes(search: string): IEpisode[] {
   );
 }
 
-export default SearchEpisodes;
+export default searchEpisodes;
