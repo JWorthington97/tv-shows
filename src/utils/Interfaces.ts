@@ -23,6 +23,7 @@ export interface ShowEpisodeProps {
 
 export interface GetEpisodesProps {
   search: string;
+  dropdown: string
 }
 
 export interface SearchInputProps {
