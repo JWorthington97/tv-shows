@@ -43,3 +43,8 @@ export interface SearchEpisodeProps {
   episodes: IEpisode[];
   search: string;
 }
+
+export interface ShowListProps {
+  setSelectedShowFromBigList(id: string): void
+
+}
