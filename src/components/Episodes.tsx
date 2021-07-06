@@ -1,20 +1,40 @@
+import { useState, useEffect } from "react";
 import SelectInput from "./SelectInput";
 import SearchInput from "./SearchInput";
 import GetEpisodes from "./GetEpisodes";
-import { useState } from "react";
- 
+import { IEpisode } from "../utils/Interfaces";
+
 function Episodes(): JSX.Element {
+  const [episodes, setEpisodes] = useState<IEpisode[]>([]);
   const [search, setSearch] = useState("");
-  const [selectedEpisode, setSelectedEpisode] = useState("")
-  console.log(selectedEpisode)
+  const [selectedEpisode, setSelectedEpisode] = useState("");
+
+  useEffect(() => {
+    const fetchEpisodes = () => {
+      fetch("https://api.tvmaze.com/shows/55352/episodes")
+        .then((response) => response.json())
+        .then((response) => {
+          setEpisodes(response);
+        });
+    };
+    fetchEpisodes();
+  }, []);
 
   return (
     <>
-      <SelectInput selectedEpisode={selectedEpisode} setSelectedEpisode={setSelectedEpisode}/>
+      <SelectInput
+        episodes={episodes}
+        selectedEpisode={selectedEpisode}
+        setSelectedEpisode={setSelectedEpisode}
+      />
       <hr />
-      <SearchInput search={search} setSearch={setSearch} />
+      <SearchInput episodes={episodes} search={search} setSearch={setSearch} />
       <hr />
-      <GetEpisodes search={search} dropdown={selectedEpisode}/>
+      <GetEpisodes
+        episodes={episodes}
+        search={search}
+        dropdown={selectedEpisode}
+      />
     </>
   );
 }

@@ -1,10 +1,13 @@
-import episodes from "../clarksons_farm.json";
 import SearchEpisodes from "../utils/searchEpisodes";
 import { SearchInputProps } from "../utils/Interfaces";
 
 //just responsible for maintaining the count
-function SearchInput({ search, setSearch }: SearchInputProps, ): JSX.Element {
-  const showEpisodes = SearchEpisodes(search);
+function SearchInput({
+  episodes,
+  search,
+  setSearch,
+}: SearchInputProps): JSX.Element {
+  const showEpisodes = SearchEpisodes({ episodes, search });
 
   return (
     <div>
