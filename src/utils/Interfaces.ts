@@ -45,6 +45,10 @@ export interface SearchEpisodeProps {
 }
 
 export interface ShowListProps {
-  setSelectedShowFromBigList(id: string): void
+  setSelectedShowFromBigList(id: string): void;
+}
 
+export interface DropdownEpisodeProps {
+  dropdown: string,
+  episodes: IEpisode[]
 }

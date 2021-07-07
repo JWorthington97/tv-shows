@@ -9,9 +9,10 @@ function Episodes(): JSX.Element {
   const [episodes, setEpisodes] = useState<IEpisode[]>([]);
   const [search, setSearch] = useState("");
   const [selectedEpisode, setSelectedEpisode] = useState("");
-  const [selectedShowFromBigList, setSelectedShowFromBigList] = useState("55352")
+  const [selectedShowFromBigList, setSelectedShowFromBigList] =
+    useState("55352");
   // const [selectedShowFromBigList, setSelectedShowFromBigList] = useState("281")
-  console.log(selectedShowFromBigList)
+  console.log(selectedEpisode);
 
   useEffect(() => {
     const fetchEpisodes = (selectedShowFromBigList: string) => {
@@ -26,7 +27,7 @@ function Episodes(): JSX.Element {
 
   return (
     <>
-      <ShowList setSelectedShowFromBigList={setSelectedShowFromBigList}/>
+      <ShowList setSelectedShowFromBigList={setSelectedShowFromBigList} />
       <SelectInput
         episodes={episodes}
         selectedEpisode={selectedEpisode}

@@ -1,7 +1,6 @@
-import episodes from "../clarksons_farm.json";
-import { IEpisode } from "../utils/Interfaces";
+import { IEpisode, DropdownEpisodeProps } from "../utils/Interfaces";
 
-function selectedDropdownEpisode(dropdown: string): IEpisode[] {
+function selectedDropdownEpisode({ episodes, dropdown}: DropdownEpisodeProps): IEpisode[] {
   return episodes.filter((episode) => episode.id === parseInt(dropdown));
 }
 
