@@ -52,4 +52,8 @@
   font-size: medium;
 }
 
+.episodeImage {
+  min-width: 400px;
+  min-height: 300px;
+}
 /* https://stackoverflow.com/questions/37502266/how-do-i-create-a-3x3-grid-via-css/46260247 */
