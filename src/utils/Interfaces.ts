@@ -22,33 +22,27 @@ export interface ShowEpisodeProps {
 }
 
 export interface GetEpisodesProps {
-  episodes: IEpisode[];
   search: string;
   dropdown: string;
 }
 
 export interface SearchInputProps {
-  episodes: IEpisode[];
   search: string;
   setSearch(search: string): void;
 }
 
 export interface SelectedEpisode {
-  episodes: IEpisode[];
-  selectedEpisode: string;
   setSelectedEpisode(id: string): void;
 }
 
 export interface SearchEpisodeProps {
-  episodes: IEpisode[];
   search: string;
 }
 
 export interface ShowListProps {
-  setSelectedShowFromBigList(id: string): void;
+  setSelectedShow(id: string): void;
 }
 
 export interface DropdownEpisodeProps {
   dropdown: string;
-  episodes: IEpisode[];
 }

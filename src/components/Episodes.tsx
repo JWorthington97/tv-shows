@@ -1,49 +1,40 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, createContext } from "react";
 import SelectInput from "./SelectInput";
 import SearchInput from "./SearchInput";
 import GetEpisodes from "./GetEpisodes";
 import ShowList from "./ShowList";
 import { IEpisode } from "../utils/Interfaces";
 
-function Episodes(): JSX.Element {
+export const EpisodesContext = createContext<IEpisode[]>([]);
+
+export function Episodes(): JSX.Element {
   const [episodes, setEpisodes] = useState<IEpisode[]>([]);
   const [search, setSearch] = useState("");
   const [selectedEpisode, setSelectedEpisode] = useState("");
-  const [selectedShowFromBigList, setSelectedShowFromBigList] =
-    useState("test");
-  console.log(selectedShowFromBigList)
+  const [selectedShow, setSelectedShow] = useState("55352");
 
   useEffect(() => {
-    const fetchEpisodes = (selectedShowFromBigList: string) => {
-      fetch(`https://api.tvmaze.com/shows/${selectedShowFromBigList}/episodes`)
+    const fetchEpisodes = (selectedShow: string) => {
+      fetch(`https://api.tvmaze.com/shows/${selectedShow}/episodes`)
         .then((response) => response.json())
         .then((jsonData) => {
           setEpisodes(jsonData);
         });
     };
-    fetchEpisodes(selectedShowFromBigList);
-  }, [selectedShowFromBigList]); //dependency array
-
-  //useEffect((function)), [variable to watch]
+    fetchEpisodes(selectedShow);
+  }, [selectedShow]);
 
   return (
     <>
-      <ShowList setSelectedShowFromBigList={setSelectedShowFromBigList} />
-      <SelectInput
-        episodes={episodes}
-        selectedEpisode={selectedEpisode}
-        setSelectedEpisode={setSelectedEpisode}
-      />
-      <hr />
-      <SearchInput episodes={episodes} search={search} setSearch={setSearch} />
-      <hr />
-      <GetEpisodes
-        episodes={episodes}
-        search={search}
-        dropdown={selectedEpisode}
-      />
+      <EpisodesContext.Provider value={episodes}>
+        <ShowList setSelectedShow={setSelectedShow} />
+        <hr />
+        <SelectInput setSelectedEpisode={setSelectedEpisode} />
+        <hr />
+        <SearchInput search={search} setSearch={setSearch} />
+        <hr />
+        <GetEpisodes search={search} dropdown={selectedEpisode} />
+      </EpisodesContext.Provider>
     </>
   );
 }
-
-export default Episodes;

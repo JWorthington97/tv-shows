@@ -1,6 +1,6 @@
 import "./App.css";
 import Footer from "./components/Footer";
-import Episodes from "./components/Episodes";
+import { Episodes } from "./components/Episodes";
 
 function App(): JSX.Element {
   return (

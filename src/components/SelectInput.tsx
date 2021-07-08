@@ -1,13 +1,9 @@
+import { useContext } from "react";
 import { formatSeasonEpisode } from "../utils/formatSeasonEpisode";
 import { SelectedEpisode } from "../utils/Interfaces";
-// import { useRef } from 'react'
+import { EpisodesContext } from "../components/Episodes";
 
-function SelectInput({
-  episodes,
-  selectedEpisode,
-  setSelectedEpisode,
-}: SelectedEpisode): JSX.Element {
-
+function SelectInput({ setSelectedEpisode }: SelectedEpisode): JSX.Element {
   return (
     <>
       <div>
@@ -19,7 +15,7 @@ function SelectInput({
           <option value="" key="placeholder">
             Choose an episode...
           </option>
-          {episodes.map((episode) => (
+          {useContext(EpisodesContext).map((episode) => (
             //Need to specify the value field, else the default is the HTML text
             <option value={episode.id} key={episode.id}>
               {formatSeasonEpisode(episode.season, episode.number)} -{" "}
