@@ -11,9 +11,8 @@ function GetEpisodes({
   let showEpisodes = [];
   dropdown === ""
     ? (showEpisodes = SearchEpisodes({ episodes, search }))
-    : (showEpisodes = selectedDropdownEpisode({episodes, dropdown}));
-  console.log(showEpisodes)
-  console.log(dropdown)
+    : (showEpisodes = selectedDropdownEpisode({ episodes, dropdown }));
+    
   return (
     <div className="episodes">
       {showEpisodes.map((episode) => (

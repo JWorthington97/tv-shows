@@ -7,11 +7,6 @@ function SelectInput({
   selectedEpisode,
   setSelectedEpisode,
 }: SelectedEpisode): JSX.Element {
-  // const episodeRef = useRef()
-
-  // const handleScrollToEpisode = () => {
-  //     episodeRef.current.scrollIntoView({ behavior: 'smooth' })
-  // }
 
   return (
     <>
@@ -21,8 +16,6 @@ function SelectInput({
           onChange={(event) => setSelectedEpisode(event.target.value)}
           name="selectEpisode"
         >
-          {/* <select onChange={(event) => document.getElementById(event.target.value).scrollIntoView()}name="selectEpisode"> */}
-          {/* <select onChange={handleScrollToEpisode}name="selectEpisode"> */}
           <option value="" key="placeholder">
             Choose an episode...
           </option>
@@ -34,7 +27,7 @@ function SelectInput({
             </option>
           ))}
         </select>
-        <button onClick={() => setSelectedEpisode("")}>Reset Search</button>
+        <button onClick={() => setSelectedEpisode("")}>Reset Selection</button>
       </div>
     </>
   );

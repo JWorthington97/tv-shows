@@ -49,6 +49,6 @@ export interface ShowListProps {
 }
 
 export interface DropdownEpisodeProps {
-  dropdown: string,
-  episodes: IEpisode[]
+  dropdown: string;
+  episodes: IEpisode[];
 }

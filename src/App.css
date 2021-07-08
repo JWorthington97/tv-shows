@@ -15,6 +15,7 @@
 .episodeInfo {
   /* border: 3px solid red; */
   padding: 20px;
+  padding-top: 1px;
 }
 
 .title {
@@ -55,5 +56,31 @@
 .episodeImage {
   min-width: 400px;
   min-height: 300px;
+  max-height: 300px;
 }
 /* https://stackoverflow.com/questions/37502266/how-do-i-create-a-3x3-grid-via-css/46260247 */
+
+.title {
+  height: auto;
+}
+
+.episode {
+  text-overflow: ellipsis;
+  width: 100%;
+  /* height: 300px; */
+  -webkit-line-clamp: initial;
+}
+
+.episodeInfo {
+  text-overflow: ellipsis;
+  width: 200px;
+  -webkit-line-clamp: initial;
+}
+
+.summary {
+  height: auto;
+  width: 100%;
+  text-overflow: ellipsis;
+  /* overflow: hidden; */
+  /* white-space: nowrap; */
+}

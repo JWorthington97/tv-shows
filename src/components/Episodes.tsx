@@ -10,20 +10,21 @@ function Episodes(): JSX.Element {
   const [search, setSearch] = useState("");
   const [selectedEpisode, setSelectedEpisode] = useState("");
   const [selectedShowFromBigList, setSelectedShowFromBigList] =
-    useState("55352");
-  // const [selectedShowFromBigList, setSelectedShowFromBigList] = useState("281")
-  console.log(selectedEpisode);
+    useState("test");
+  console.log(selectedShowFromBigList)
 
   useEffect(() => {
     const fetchEpisodes = (selectedShowFromBigList: string) => {
       fetch(`https://api.tvmaze.com/shows/${selectedShowFromBigList}/episodes`)
         .then((response) => response.json())
-        .then((response) => {
-          setEpisodes(response);
+        .then((jsonData) => {
+          setEpisodes(jsonData);
         });
     };
     fetchEpisodes(selectedShowFromBigList);
-  }, [selectedShowFromBigList]);
+  }, [selectedShowFromBigList]); //dependency array
+
+  //useEffect((function)), [variable to watch]
 
   return (
     <>
