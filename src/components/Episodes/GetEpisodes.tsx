@@ -1,6 +1,6 @@
-import { GetEpisodesProps } from "../utils/Interfaces";
-import selectedDropdownEpisode from "../utils/selectedDropdownEpisode";
-import SearchEpisodes from "../utils/searchEpisodes";
+import { GetEpisodesProps } from "../../utils/Interfaces";
+import selectedDropdownEpisode from "../../utils/selectedDropdownEpisode";
+import SearchEpisodes from "../../utils/searchEpisodes";
 import ShowEpisode from "./ShowEpisode";
 
 function GetEpisodes({ search, dropdown }: GetEpisodesProps): JSX.Element {

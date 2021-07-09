@@ -3,7 +3,7 @@ import SelectInput from "./SelectInput";
 import SearchInput from "./SearchInput";
 import GetEpisodes from "./GetEpisodes";
 import ShowList from "./ShowList";
-import { IEpisode } from "../utils/Interfaces";
+import { IEpisode } from "../../utils/Interfaces";
 
 export const EpisodesContext = createContext<IEpisode[]>([]);
 

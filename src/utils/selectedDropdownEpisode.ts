@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { IEpisode, DropdownEpisodeProps } from "../utils/Interfaces";
-import { EpisodesContext } from "../components/Episodes";
+import { EpisodesContext } from "../components/Episodes/Episodes";
 
 function SelectedDropdownEpisode({
   dropdown,

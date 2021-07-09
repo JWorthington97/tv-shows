@@ -1,7 +1,7 @@
 import { useContext } from "react";
-import { formatSeasonEpisode } from "../utils/formatSeasonEpisode";
-import { SelectedEpisode } from "../utils/Interfaces";
-import { EpisodesContext } from "../components/Episodes";
+import { formatSeasonEpisode } from "../../utils/formatSeasonEpisode";
+import { SelectedEpisode } from "../../utils/Interfaces";
+import { EpisodesContext } from "../Episodes/Episodes";
 
 function SelectInput({ setSelectedEpisode }: SelectedEpisode): JSX.Element {
   return (

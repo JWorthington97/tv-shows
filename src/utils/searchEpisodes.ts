@@ -1,6 +1,6 @@
 import { IEpisode, SearchEpisodeProps } from "../utils/Interfaces";
 import { useContext } from "react";
-import { EpisodesContext } from "../components/Episodes";
+import { EpisodesContext } from "../components/Episodes/Episodes";
 
 function SearchEpisodes({ search }: SearchEpisodeProps): IEpisode[] {
   // function searchEpisodes(episodes: IEpisode[], search: string): IEpisode[] {

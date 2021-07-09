@@ -1,5 +1,5 @@
-import { ShowEpisodeProps } from "../utils/Interfaces";
-import { formatSeasonEpisode } from "../utils/formatSeasonEpisode";
+import { formatSeasonEpisode } from "../../utils/formatSeasonEpisode";
+import { ShowEpisodeProps } from "../../utils/Interfaces";
 
 function ShowEpisode({ episode }: ShowEpisodeProps): JSX.Element {
   return (
