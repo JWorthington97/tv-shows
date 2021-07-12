@@ -4,6 +4,7 @@ import SearchInput from "./SearchInput";
 import GetEpisodes from "./GetEpisodes";
 import ShowList from "./ShowList";
 import { IEpisode } from "../../utils/Interfaces";
+import { useParams } from "react-router";
 
 export const EpisodesContext = createContext<IEpisode[]>([]);
 
@@ -11,8 +12,13 @@ export function Episodes(): JSX.Element {
   const [episodes, setEpisodes] = useState<IEpisode[]>([]);
   const [search, setSearch] = useState("");
   const [selectedEpisode, setSelectedEpisode] = useState("");
-  const [selectedShow, setSelectedShow] = useState("55352");
 
+  const { episodeId } = useParams<{ episodeId: string }>();
+  const [selectedShow, setSelectedShow] = useState(episodeId);
+
+  // setSelectedShow(episodeId)
+
+  // setSelectedShow(useParams().episodeId)
   useEffect(() => {
     const fetchEpisodes = (selectedShow: string) => {
       fetch(`https://api.tvmaze.com/shows/${selectedShow}/episodes`)
@@ -27,8 +33,8 @@ export function Episodes(): JSX.Element {
   return (
     <>
       <EpisodesContext.Provider value={episodes}>
-        <ShowList setSelectedShow={setSelectedShow} />
-        <hr />
+        {/* <ShowList setSelectedShow={setSelectedShow} />
+        <hr /> */}
         <SelectInput setSelectedEpisode={setSelectedEpisode} />
         <hr />
         <SearchInput search={search} setSearch={setSearch} />

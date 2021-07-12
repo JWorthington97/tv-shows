@@ -56,57 +56,57 @@ export interface IShow {
   summary: string;
   genres: string[];
   status: string;
-  runtime: number|null;
-  id: number
-  url: string,
-  type: string
-  language: string
-  averageRuntime: number|null
-  premiered: string|null
-  officialSite: string|null
+  runtime: number | null;
+  id: number;
+  url: string;
+  type: string;
+  language: string;
+  averageRuntime: number | null;
+  premiered: string | null;
+  officialSite: string | null;
   schedule: {
-    time: string
-    days: string[]
-  },
+    time: string;
+    days: string[];
+  };
   rating: {
-    average: number|null
-  },
-  weight: number,
+    average: number | null;
+  };
+  weight: number;
   network: {
-    id: number,
-    name: string
+    id: number;
+    name: string;
     country: {
-      name: string,
-      code: string,
-      timezone: string
-    }|null
-  }|null,
+      name: string;
+      code: string;
+      timezone: string;
+    } | null;
+  } | null;
   webChannel: {
-    id: number,
-    name: string,
+    id: number;
+    name: string;
     country: {
-      name: string,
-      code: string,
-      timezone: string
-    }|null
-  }|null,
-  dvdCountry: string|null
+      name: string;
+      code: string;
+      timezone: string;
+    } | null;
+  } | null;
+  dvdCountry: string | null;
   externals: {
-    tvrage: number,
-    thetvdb: number|null,
-    imdb: string|null
-  },
-  updated: number,
+    tvrage: number;
+    thetvdb: number | null;
+    imdb: string | null;
+  };
+  updated: number;
   _links: {
     self: {
-      href: string
-    },
+      href: string;
+    };
     previousepisode?: {
-      href: string|null
-    }
-  }|null
+      href: string | null;
+    };
+  } | null;
 }
 
 export interface ShowShowProps {
-  show: IShow
+  show: IShow;
 }
