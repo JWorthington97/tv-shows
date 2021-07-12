@@ -9,8 +9,8 @@ function App(): JSX.Element {
   const [selectedShow, setSelectedShow] =  useState("")
   return (
     <>
-      {/* <Shows /> */}
-      <Episodes />
+      <Shows />
+      {/* <Episodes /> */}
       <Footer />
     </>
   );
